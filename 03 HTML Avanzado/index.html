@@ -141,5 +141,185 @@ Diseña un horario de clases de lunes a viernes con 3 horarios (8:00 - 9:00; 9:0
             
         </tbody>
     </table>
+
+    <!--
+        =================================================
+
+        Vinculos HTML.
+
+        Crear marcodere en HTML.
+
+        Los marcarcoderes son utiles cuando tienes una pagina web muy larga. Para crear un marcador siga los siguientes pasos:
+        -  indicar un atributo (id) para el marcador
+        - Crear el marcador y agregar un enlace
+        
+
+    -->
+
+    <hr>
+    <a href="#parrafito3">Parrafito 3</a>
+    <br>
+    <a href="/html/login.html">Inicia sesión</a>
+
+    <br>
+    <a href="/html/login.html#p4">Mira el parrafo 4 del Login</a>
+    <p id="parrafito1">P1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugiat odit voluptates deserunt soluta tempore ab provident magni quia dolorum, iure minima alias adipisci officiis dolor explicabo maxime praesentium unde?</p>
+
+    <br>
+    <p id="parrafito2">P2. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione qui placeat rem voluptate magni consequuntur iste sint illo soluta! Recusandae excepturi delectus esse facilis vitae vero architecto exercitationem consequatur cupiditate!</p>
+
+    <br>
+
+    <p id="parrafito3">P3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate culpa animi, rem atque consequuntur asperiores quam consequatur deleniti quod, dignissimos numquam impedit officiis voluptas explicabo odit aliquid maxime neque sunt!</p>
+    <hr>
+    <!--
+        =========================================================
+        Formulario de HTMl
+        Elemto que se encarga de recopilar informacio del ususario para enviarl a un servidor para su procesamiento.
+-------Elemtos de un formulario-----------
+<form></form> se utiliza para crear un formulario HTML para la entrada de un ususario.
+
+Diferentes tipos de entrada como campos de texto, casillas de verificacion, botones de opcion, botones de envio, etc.
+
+    -->
+
+
+<form action="">
+    <label for="user">Nombre de Usuario</label>
+    <input type="text" id="user" name="user">
+</form>
+
+<br>
+
+
+<!--Elemento  <lebel>
+    
+    Define una etiqueta para formularios y es util para los usuarios de lectores de pantalla. Cuando el usuario hace click en el texto dentro del elemto <label> alterna el boton de opcion/casilla de verificacion.
+        - for: debe ser igual al atributo del elemto <input> para unirlos.
+----Elemto <input>
+    Es el elemto de formulario mas usado y se puede mostra segun el atributo <type>
+        - text. Permite introducir texto
+        - password. Permite introduci una contraeña y agregar astericos o puntos par ocultar la informacion.
+        - number. Tipo numerico para elegir numeros. se pueden definir numeros minimos.}
+        - email. Solicita el uso de la @ para escribir
+        - date . Despliega un calendario para seleccionar dia, mes  y año en formato (dd-mm-aaaa)
+
+
+-->
+<form action="">
+    <label for="password">Contraseña</label>
+    <input type="password" id="password" name="password" >
+    <br>
+    <br>
+    <label for="edad">Escribe tu edad</label>
+    <input type="number" id="edad" name="edad" min="0" max="25" placeholder="Minimo 1 y Maximo 10 años">
+    <br>
+    <br>
+    <label for="correo_elect"> Esribe tu correo electtonico</label>
+    <input type="email" id="correo_elect" name="correo_elect">
+    <br>
+    <br>
+    <!-- Si queremos un cuadro de texto para realizar comentarios se utiliza la etiquta texarea-->
+    <label for="comentarios">Escribe un comentario</label>
+    <textarea name="comentarios" id="comentarios" placeholder="Maximo 150 palabras" cols="30" rows="10"></textarea>
+    <br>
+    <br>
+    <label for="nacimiento">Selecciona tu fecha de nacimiento</label>
+    <input type="date" id="nacimiento" name="nacimiento">
+    <br>
+    <br>
+    <!--radio. Define un boton de opcion. Permite al usuario seleccionar solamente una opcion de un numero de opciones-->
+    <p>Elige ru lenguaje de programacion fav</p>
+    <input type="radio" id="java" name="lenguaje_fav" value="java">
+    <label for="java">Java</label><br>
+    <input type="radio" id="javascript" name="lenguaje_fav" value="javascript">
+    <label for="javascript">Javascript</label><br>
+    <input type="radio" id="python" name="lenguaje_fav" value="python">
+    <label for="python">Python</label>
+    <br>
+    <br>
+    <!--checkbox. Define una casilla de verificacion, donde el usuario puede seleccionar CERO o mas opciones de un numero limitado de opciones-->
+
+    <p>Selecciona los idimos que hablas</p>
+    <input type="checkbox" id="idioma1" name="idioma1" value="english">
+    <label for="idioma1">ingles</label>
+    <br>
+    <input type="checkbox" id="idioma2" name="idioma2" value="spanish">
+    <label for="idioma2">Español</label>
+    <br>
+    <input type="checkbox" id="idioma3" name="idioma3" value="french">
+    <label for="idioma3">Frances</label>
+    <br>
+    <br>
+    <!--file. Es un campo de seleccion de archivos y un boton "Examinar" que permite cargar archivos-->
+    <label for="">Selecciona un archivo</label>
+    <input type="file" id="miarchivo" name="miarchivo">
+    <br>
+    <br>
+    <!--Experimentando con documentacion de w3schools-range.-->
+    <label for="">Volumen (entre 0 y 50)</label>
+    <input type="range" id="vol" name="vol" min="0" max="50">
+</form>
+
+
+<!--==========BOTONES================
+
+    Permiten controlar el envio de informacion del usuario. El type="summit" envia al servidor lo que se escribe y el type="reset" permite resetear la informacion contenida en el formulario
+
+-->
+
+<!--Reto: diseñar un formulario de registro para una pagina de videojuegos. ¿Que necesitamos?
+    - nombre: "text"
+    - apellido: "text"
+    - nombre de usuario: "text"
+    - correo electronico: "email"
+    - edad(minimo 18 años): "number"
+    - contraseña: "password"}
+    - boton con nombre
+    -
+
+-->
+<br><br>
+<hr>
+<!--Cuando el atributo action esta en blanco, la solicitud de envio de formulario se enviara a la misma pagina. Es decir, cuando se envie el formulario, los datos se enviaraan al mismo URL.
+Para hacer que los datos del formulario se envien a una URL especifica, debemos establecer dicha URL dentro de action-->
+<form action="action_page.php" method="post" target="_blank">
+    
+    <label for="user">Nombre</label>
+    <input type="text" id="user" name="user">
+    <br><br>
+    <label for="user">Apellidos</label>
+    <input type="text" id="user" name="user">
+    <br><br>
+    <label for="user">Nombre de Usuario</label>
+    <input type="text" id="user" name="user">
+    <br><br>
+    <label for="edad">Edad</label>
+    <input type="number" id="edad" name="edad" min="0" max="25">
+    <br><br>
+    <label for="correo_elect"> Esribe tu correo electronico</label>
+    <input type="email" id="correo_elect" name="correo_elect">
+    <br><br>
+    <label for="password">Contraseña</label>
+    <input type="password" id="password" name="password" >
+    <br><br>
+    <button type="submit">Registrarse</button>
+    <button type="reset">Limpiar</button>
+    
+</form>
+
+
+<h4>Inicia sesion</h4>
+<form action="/action_information.php" method="get">
+    <label for="user">Nombre de Usuario</label>
+    <input type="text" id="user" name="user">
+    <br><br>
+    <label for="password">Contraseña</label>
+    <input type="password" id="password" name="password" >
+    <br><br>
+    <button type="submit">Iniciar sesion</button>
+
+
+</form>
 </body>
 </html>
